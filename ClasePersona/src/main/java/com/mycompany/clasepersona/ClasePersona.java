@@ -100,4 +100,16 @@ print(usuario1.tipo_usuario)
     }
 }
 
+	public class Deportista {
+ class Deportista(Persona):
+  def __init__(self, nombre, edad, genero, deporte):
+    super().__init__(nombre, edad, genero)
+    self.deporte = deporte
+  
+  # Método entrenar de la subclase Deportista
+  def entrenar(self, tiempo):
+    print(self.nombre + " ha entrenado " + str(tiempo) + " minutos en " + self.deporte + ".")
+    
+}
+
 
